@@ -1,0 +1,19 @@
+{
+    "manifest_version": 1,
+    "name": "Achilles' Notes",
+    "version": "1.0",
+  
+    "description": "This extension is used to take notes on your chrome or firefox home page",
+  
+    "icons": {
+      "48": "icons/notes-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["notes.js"]
+      }
+    ]
+  
+}
